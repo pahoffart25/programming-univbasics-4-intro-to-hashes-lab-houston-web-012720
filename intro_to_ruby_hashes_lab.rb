@@ -28,7 +28,7 @@ end
 
 def update_counting_hash(hash, key)
 updated_hash = {}
-  if hash[key]
+  if hash.include? [key]
     updated_hash.push key += 1
   else
 
